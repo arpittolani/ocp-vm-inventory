@@ -34,12 +34,10 @@ To run this script successfully, you must have the following installed and confi
     ```bash
     ./ocp-rvtools.sh
     ```
-4.  **Save to CSV**: To save the output as a clean CSV file (without the terminal formatting from `column -t`), redirect the output:
+4.  **Save to CSV**: To save the output as a clean CSV file, redirect the output:
     ```bash
-    ./ocp-rvtools.sh | tr -s '[:blank:]' ',' > vm_inventory_report.csv
+    ./ocp-rvtools.sh --csv > vm_inventory_report.csv
     ```
-    *(Note: Using `tr` here is a robust way to strip the `column -t` padding and ensure clean CSV output.)*
-
 ---
 
 ## Report Columns
